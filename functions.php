@@ -1,8 +1,18 @@
 <?php
 
+/**
+ * Remove the content editor from ALL pages
+ */
+function remove_content_editor()
+{
+    remove_post_type_support('page', 'editor');
+}
+
+add_action('admin_head', 'remove_content_editor');
+
 function boilerplate_load_assets()
 {
-    wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/app.js'), array('wp-element'), '1.0', true);
+    wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/app.js'), ['wp-element'], '1.0', true);
     wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/style.css'));
 }
 
@@ -18,10 +28,10 @@ add_action('after_setup_theme', 'boilerplate_add_support');
 
 // register the nav
 function register_my_menu() {
-        register_nav_menus( array(
+        register_nav_menus( [
             'main-menu' => __( 'Main Menu', 'text_domain' ),
             'footer'  => __( 'Footer ', 'text_domain' ),
-        )
+            ]
     );
 }
 add_action( 'init', 'register_my_menu' );

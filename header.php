@@ -137,17 +137,3 @@
     </section>
 </header>
 <!-- end TOP HEADER -->
-
-<!-- HERO IMAGE -->
-<div class="absolute flex flex-col h-screen 2md:items-start 2md:text-left xs:text-center xs:items-center 2md:w-auto xs:w-screen justify-center text-white sm:px-32 xs:px-0 -mt-28">
-    <h1 class="mb-2 font-poppins font-medium mt-20 2md:text-big 2md:leading-big xs:text-3xl xs:leading-body">Learn,<br>
-        Practice &<br> Play Soccer!</h1>
-    <p class="mb-10 font-roboto font-extralight 2md:text-xl xs:text-sm">A Co-Ed League for All Skill Levels - Age 5 -
-        12</p>
-    <button type="button" class="bg-lightRed hover:bg-darkRed py-4 w-56 btnCommonElements uppercase">register</button>
-</div>
-<section class="hero relative -mt-28 -z-10">
-    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
-    <div class="h-screen bg-no-repeat bg-[center_top_7rem] bg-cover bg-[url('/wp-content/themes/sarasota-soccer-club/images/hero-image.jpg')]"></div>
-</section>
-<!-- end HERO IMAGE -->

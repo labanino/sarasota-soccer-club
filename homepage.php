@@ -2,15 +2,27 @@
 /* Template Name: Homepage */
 get_header(); ?>
 
+    <!-- HERO IMAGE -->
+    <div class="absolute flex flex-col h-screen 2md:items-start 2md:text-left xs:text-center xs:items-center 2md:w-auto xs:w-screen justify-center text-white sm:px-32 xs:px-0 -mt-28">
+        <h1 class="mb-2 font-poppins font-medium mt-20 2md:text-big 2md:leading-big xs:text-3xl xs:leading-body"><?php the_field('hero_h1'); ?></h1>
+        <p class="mb-10 font-roboto font-extralight 2md:text-xl xs:text-sm"><?php the_field('hero_text'); ?></p>
+        <button type="button" class="bg-lightRed hover:bg-darkRed py-4 w-56 btnCommonElements uppercase">register</button>
+    </div>
+    <section class="hero relative -mt-28 -z-10">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="h-screen bg-no-repeat bg-[center_top_7rem] bg-cover" style="background-image: url(<?php the_field('hero_image'); ?>);"></div>
+    </section>
+    <!-- end HERO IMAGE -->
+
     <!-- HOURS -->
     <section class="hours">
         <div class="grid grid-cols-12">
-            <span class="2md:col-span-4 sm:col-span-6 xs:col-span-full border-b-1 border-b border-middleGray flex flex-col sm:items-end xs:items-center justify-center md:py-12 md:pr-10 md:pl-2 sm:pr-10 xs:px-2 xs:py-12 sm:text-right xs:text-center">
-                <h2 class="font-extrabold xl:text-3xl xs:text-[1.2rem] uppercase leading-h2 mb-3 text-darkRed">Monday night clinics<br>& saturday games</h2>
-                <p class="xl:text-xl xs:text-sm font-extralight uppercase text-darkRed">Mon 5:30 - 7:00 pm | Sat 9:00 - 11:00 am</p>
-            </span>
-            <div class="2md:col-span-3 sm:col-span-6 bg-center bg-cover -mt-10 h-55 sm:visible xs:invisible bg-[url('/wp-content/themes/sarasota-soccer-club/images/stadium-sits.jpg')]"></div>
-            <div class="md:col-span-5 bg-center bg-cover -mt-10 h-55 2md:visible xs:invisible bg-[url('/wp-content/themes/sarasota-soccer-club/images/soccer-ball.jpg')]"></div>
+            <div class="2md:col-span-4 sm:col-span-6 xs:col-span-full border-b-1 border-b border-middleGray flex flex-col sm:items-end xs:items-center justify-center md:py-12 md:pr-10 md:pl-2 sm:pr-10 xs:px-2 xs:py-12 sm:text-right xs:text-center">
+                <h2 class="font-extrabold xl:text-3xl xs:text-[1.2rem] uppercase leading-h2 mb-3 text-darkRed"><?php the_field('hours_title'); ?></h2>
+                <p class="xl:text-xl xs:text-sm font-extralight uppercase text-darkRed"><?php the_field('hours_text'); ?></p>
+            </div>
+            <div class="2md:col-span-3 sm:col-span-6 bg-center bg-cover -mt-10 h-55 sm:visible xs:invisible" style="background-image: url(<?php the_field('hours_image_1'); ?>);"></div>
+            <div class="md:col-span-5 bg-center bg-cover -mt-10 h-55 2md:visible xs:invisible" style="background-image: url(<?php the_field('hours_image_2'); ?>);"></div>
         </div>
     </section>
     <!-- end HOURS -->
