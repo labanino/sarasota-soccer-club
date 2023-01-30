@@ -67,4 +67,7 @@
     .current-menu-item {
         @apply text-white opacity-60;
     }
+    .mobileMenuComponent {
+        @apply top-0 absolute bg-black opacity-90 text-white w-full flex-col justify-center origin-top animate-open-menu hidden;
+    }
 }

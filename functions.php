@@ -31,6 +31,7 @@ function register_my_menu() {
         register_nav_menus( [
             'main-menu' => __( 'Main Menu', 'text_domain' ),
             'footer'  => __( 'Footer ', 'text_domain' ),
+            'mobile'  => __( 'Mobile ', 'text_domain' ),
             ]
     );
 }

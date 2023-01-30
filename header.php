@@ -125,14 +125,16 @@
     <section id="menu" class="absolute top-0 bg-black opacity-90 text-white w-full flex-col justify-center origin-top animate-open-menu hidden">
         <button class="absolute top-0 text-3xl self-end px-6">&times;</button>
         <nav class="flex flex-col items-center justify-center min-h-screen">
-            <a href="#" class="w-full menuButton">home</a>
-            <a href="#" class="w-full menuButton">about</a>
-            <a href="#" class="w-full menuButton">register</a>
-            <a href="#" class="w-full menuButton">schedule</a>
-            <a href="#" class="w-full menuButton">volunteer</a>
-            <a href="#" class="w-full menuButton">donate</a>
-            <a href="#" class="w-full menuButton">store</a>
-            <a href="#" class="w-full menuButton">contact</a>
+        <?php
+        wp_nav_menu( [
+            'theme_location'  => 'footer',
+            'container'       => 'ul',
+            'menu_class'      => 'text-xl text-white text-center uppercase space-y-6',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'depth'           => 0
+        ]);
+        ?>
         </nav>
     </section>
 </header>

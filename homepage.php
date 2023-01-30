@@ -28,8 +28,8 @@ get_header(); ?>
     <!-- end HOURS -->
 
     <!-- ABOUT -->
-    <section class="about text-darkRed leading-6 md:flex">
-        <div class=" md:flex md:w-1/2">
+    <section class="about text-darkRed leading-6 lg:h-[32rem] md:flex">
+        <div class="md:flex md:w-1/2">
             <img class="w-auto md:object-right md:h-auto sm:h-64 xs:h-44 xs:w-full object-cover" src="/wp-content/themes/sarasota-soccer-club/images/about.jpg" alt="" />
         </div>
         <div class="md:w-1/2 2md:pr-32 md:flex md:flex-col md:justify-center xs:w-full xs:px-6 xs:py-12">
@@ -42,7 +42,7 @@ get_header(); ?>
     <!-- SCHOLARSHIPS -->
     <section class="scholarship text-white leading-6 relative">
         <div class="absolute inset-0 bg-lightPurple bg-opacity-95"></div>
-        <div class="flex bg-[url('/wp-content/themes/sarasota-soccer-club/images/scholarship-bg.jpg')] bg-no-repeat bg-cover bg-center xs:px-6 xs:py-12 xs:w-full">
+        <div class="flex bg-[url('/wp-content/themes/sarasota-soccer-club/images/scholarship-bg.jpg')] bg-no-repeat bg-cover bg-center xs:px-6 xs:py-12 xs:w-full lg:h-[32rem]">
             <div class="2md:w-1/2 z-10 2md:ml-36 flex flex-col justify-center">
                 <h2 class="font-extrabold xl:text-3xl xs:text-[1.2rem] uppercase leading-h2 mb-3">Scholarship</h2>
                 <span class="font-extralight leading-lead md:text-2base xs:text-base">
@@ -79,7 +79,7 @@ get_header(); ?>
     <!-- end PICTURES BLOCK -->
 
     <!-- VOLUNTEER -->
-    <section class="about text-darkRed leading-6">
+    <section class="about text-darkRed leading-6 lg:h-[32rem]">
         <div class="md:flex bg-[url('/wp-content/themes/sarasota-soccer-club/images/volunteer-bg.png')] bg-no-repeat bg-cover bg-center">
             <div class=" md:flex md:w-2/5 md:p-8 xs:p-5">
                 <img class="mx-auto" src="/wp-content/themes/sarasota-soccer-club/images/coach.png" alt="" />
