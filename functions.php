@@ -12,7 +12,7 @@ add_action('admin_head', 'remove_content_editor');
 
 function boilerplate_load_assets()
 {
-    wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/app.js'), ['wp-element'], '1.0', true);
+    wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/scripts.min.js'), ['wp-element'], '1.0', true);
     wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/style.css'));
 }
 
